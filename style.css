@@ -1,0 +1,142 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main Container */
+.main-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background-color: #0d47a1; /* Deep Blue */
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+header h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+  color: #bbdefb; /* lighter blue */
+}
+
+/* Sections */
+.section {
+  padding: 40px 20px;
+  margin-bottom: 30px;
+  background-color: #e3f2fd; /* light blue background for cards */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #0d47a1;
+}
+
+/* Resume & Achievements */
+.resume-btns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #0d47a1;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #1565c0;
+}
+
+.achievements ul,
+.certificates ul {
+  list-style: none;
+  text-align: left;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.achievements li,
+.certificates li {
+  margin-bottom: 8px;
+  font-size: 1.1em;
+}
+
+.certificates h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #1565c0;
+}
+
+/* Projects */
+.project {
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.project h3 {
+  font-size: 1.5em;
+  margin-bottom: 5px;
+  color: #1565c0;
+}
+
+.project p {
+  font-style: italic;
+  color: #0d47a1;
+}
+
+.project ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
+
+.project ul li {
+  margin-bottom: 5px;
+}
+
+/* Skills */
+.skills-list {
+  list-style: none;
+  text-align: left;
+}
+
+.skills-list li {
+  margin-bottom: 10px;
+  font-size: 1.1em;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2.2em;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  .project, .skills-list, .achievements ul, .certificates ul {
+    padding: 0 10px;
+  }
+}
